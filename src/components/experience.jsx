@@ -2,7 +2,7 @@ import { experience } from "./objFile";
 
 export default function Experience() {
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen gap-10 p-5">
+    <div className="flex flex-col justify-center items-center min-h-screen gap-10 p-5 lg:px-10">
       <h2 className="font-bold text-2xl lg:text-4xl">Latest Experience</h2>
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         {experience.map((key, exp) => (

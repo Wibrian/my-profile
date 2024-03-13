@@ -2,11 +2,11 @@ import { cardData } from "./objFile";
 
 export default function Education() {
   return (
-    <section className="flex flex-col items-center p-5 min-h-screen justify-around">
+    <section className="flex flex-col items-center min-h-screen justify-around px-10">
       <h2 className="text-4xl font-bold">Education</h2>
       <div className="flex flex-col lg:flex-row items-center">
         {cardData.map((key, obj) => (
-          <div className="card lg:card-side bg-base-100 shadow m-4 hover:shadow-xl duration-200 border-solid border-2 hover:m-[10px]" key={obj}>
+          <div className="card lg:card-side rounded-lg bg-base-100 shadow m-4 hover:shadow-xl duration-200 border-solid border-2" key={obj}>
             <figure className="relative">
               <img className="object-cover min-h-80 w-auto lg:w-80 blur-[4px]" src={key.image} alt="Img" />
               <img className="absolute size-auto" src={key.logo} alt="Logo" srcSet="" />

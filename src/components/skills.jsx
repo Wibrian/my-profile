@@ -2,8 +2,8 @@ import { techStack } from "./objFile";
 
 export default function Skills() {
   return (
-    <section className="flex flex-col items-center gap-20 min-h-screen justify-center">
-      <h2 className="text-4xl font-bold">Skills</h2>
+    <section className="flex flex-col items-center gap-20 min-h-screen justify-center bg-secondary">
+      <h2 className="text-4xl font-bold">Tech Skills</h2>
       <div className="flex flex-wrap lg:flex-row gap-5 justify-center">
         {techStack.map((key, tech) => (
           <div

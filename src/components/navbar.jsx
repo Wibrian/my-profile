@@ -11,7 +11,7 @@ export default function NavbarUI() {
   //   console.log("changed", toggle);
 
   return (
-    <div className="navbar bg-base-100 sticky top-0 shadow z-10">
+    <nav className="navbar bg-base-100 sticky top-0 shadow z-10 lg:px-10 bg-transparent">
       <div className="navbar-start">
         <div className="dropdown">
           <label className="btn btn-ghost swap swap-rotate lg:hidden" onChange={() => setToggle(!toggle)}>
@@ -28,7 +28,10 @@ export default function NavbarUI() {
               <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
             </svg>
           </label>
-          <ul className={`menu menu-sm mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-25 flex items-center absolute ${toggle ? "translate-x-[0%]" : "translate-x-[-120%]"} duration-200 overflow-hidden`}>
+          <ul
+            className={`menu menu-sm mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-25 flex items-center absolute ${
+              toggle ? "translate-x-[0%]" : "translate-x-[-120%]"
+            } duration-200 overflow-hidden lg:hidden`}>
             <li className="py-2">
               <a href="##">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -52,7 +55,11 @@ export default function NavbarUI() {
             <li className="py-2">
               <a href="##">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                  <path fillRule="evenodd" d="M2.25 6a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V6Zm3.97.97a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1 0 1.06l-2.25 2.25a.75.75 0 0 1-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 0 1 0-1.06Zm4.28 4.28a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clipRule="evenodd" />
+                  <path
+                    fillRule="evenodd"
+                    d="M2.25 6a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V6Zm3.97.97a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1 0 1.06l-2.25 2.25a.75.75 0 0 1-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 0 1 0-1.06Zm4.28 4.28a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z"
+                    clipRule="evenodd"
+                  />
                 </svg>
               </a>
             </li>
@@ -112,12 +119,51 @@ export default function NavbarUI() {
               </svg>
             </a>
           </li>
+          <li className="px-0.5">
+            <a href="##">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                <path
+                  fillRule="evenodd"
+                  d="M2.25 6a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V6Zm3.97.97a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1 0 1.06l-2.25 2.25a.75.75 0 0 1-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 0 1 0-1.06Zm4.28 4.28a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+          <li className="px-0.5">
+            <a href="##">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                <path
+                  fillRule="evenodd"
+                  d="M7.5 5.25a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0 1 12 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 0 1 7.5 5.455V5.25Zm7.5 0v.09a49.488 49.488 0 0 0-6 0v-.09a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5Zm-3 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+                  clipRule="evenodd"
+                />
+                <path d="M3 18.4v-2.796a4.3 4.3 0 0 0 .713.31A26.226 26.226 0 0 0 12 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 0 1-6.477-.427C4.047 21.128 3 19.852 3 18.4Z" />
+              </svg>
+            </a>
+          </li>
+          <li className="px-0.5">
+            <a href="##">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                <path
+                  fillRule="evenodd"
+                  d="M7.502 6h7.128A3.375 3.375 0 0 1 18 9.375v9.375a3 3 0 0 0 3-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 0 0-.673-.05A3 3 0 0 0 15 1.5h-1.5a3 3 0 0 0-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6ZM13.5 3A1.5 1.5 0 0 0 12 4.5h4.5A1.5 1.5 0 0 0 15 3h-1.5Z"
+                  clipRule="evenodd"
+                />
+                <path
+                  fillRule="evenodd"
+                  d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V9.375ZM6 12a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V12Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 15a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V15Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 18a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V18Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75Z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
       <div className="navbar-end px-[16px]">
         <label className="swap swap-rotate">
           {/* this hidden checkbox controls the state */}
-          <input type="checkbox" className="theme-controller" value="dim" checked={isDark} onChange={() => setIsDark(!isDark)} />
+          <input type="checkbox" className="theme-controller" value="coffee" checked={isDark} onChange={() => setIsDark(!isDark)} />
 
           {/* sun icon */}
           <svg className="swap-on fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -130,6 +176,6 @@ export default function NavbarUI() {
           </svg>
         </label>
       </div>
-    </div>
+    </nav>
   );
 }
